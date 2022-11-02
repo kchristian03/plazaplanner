@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Policies;
+
+use App\Models\products;
+use App\Models\User;
+use Illuminate\Auth\Access\HandlesAuthorization;
+
+class productsPolicy
+{
+    use HandlesAuthorization;
+
+    public function viewAny(User $user): bool
+    {
+        
+    }
+
+    public function view(User $user, products $products): bool
+    {
+    }
+
+    public function create(User $user): bool
+    {
+    }
+
+    public function update(User $user, products $products): bool
+    {
+    }
+
+    public function delete(User $user, products $products): bool
+    {
+    }
+
+    public function restore(User $user, products $products): bool
+    {
+    }
+
+    public function forceDelete(User $user, products $products): bool
+    {
+    }
+}

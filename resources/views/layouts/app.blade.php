@@ -20,14 +20,14 @@
 
     <!--CSS-JS for UI/UX - Tailwind-->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="text/javascript" src="resources/js/components-v2.js"></script>
-    <link rel="stylesheet" href="resources/css/components-v2.css">
-    <script type="text/javascript" src="resources/js/alpine.js"></script>
+    <script type="text/javascript" src="../../../public/css-js/js/components-v2.js"></script>
+    <link rel="stylesheet" href="../../../public/css-js/css/components-v2.css">
+    <script type="text/javascript" src="../../../public/css-js/js/alpine.js"></script>
 
     <!--SCC-JS for WhatsApp Floating Button-->
-    <link rel="stylesheet" href="/resources/css/floating-wpp.css">
-    <script type="text/javascript" src="/resources/js/floating-wpp.js"></script>
-    <script type="text/javascript" src="/resources/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/public/css-js/css/floating-wpp.css">
+    <script type="text/javascript" src="/public/css-js/js/floating-wpp.js"></script>
+    <script type="text/javascript" src="/public/css-js/js/jquery-3.3.1.min.js"></script>
 
 </head>
 <body class="antialiased font-sans bg-transparent scroll-smooth overflow-x-hidden w-[100vw] h-[100vh] m-0 p-0">

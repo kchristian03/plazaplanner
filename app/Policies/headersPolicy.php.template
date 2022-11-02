@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Policies;
+
+use App\Models\headers;
+use App\Models\User;
+use Illuminate\Auth\Access\HandlesAuthorization;
+
+class headersPolicy
+{
+    use HandlesAuthorization;
+
+    public function viewAny(User $user): bool
+    {
+
+    }
+
+    public function view(User $user, headers $headers): bool
+    {
+    }
+
+    public function create(User $user): bool
+    {
+    }
+
+    public function update(User $user, headers $headers): bool
+    {
+    }
+
+    public function delete(User $user, headers $headers): bool
+    {
+    }
+
+    public function restore(User $user, headers $headers): bool
+    {
+    }
+
+    public function forceDelete(User $user, headers $headers): bool
+    {
+    }
+}

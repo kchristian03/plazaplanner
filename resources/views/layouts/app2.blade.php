@@ -10,41 +10,41 @@
     <meta name="keywords" content="{key}">
     <meta name="description" content="{desc}">
     <meta name="author" content="Kevin Christian">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', '{Test}') }}</title>
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+    {{--    <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">--}}
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!--CSS-JS for UI/UX - Tailwind-->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="text/javascript" src="resources/js/components-v2.js"></script>
-    <link rel="stylesheet" href="resources/css/components-v2.css">
-    <script type="text/javascript" src="resources/js/alpine.js"></script>
+    <script type="text/javascript" src="/css-js/js/components-v2.js"></script>
+    <link rel="stylesheet" href="/css-js/css/components-v2.css">
+    <script type="text/javascript" src="/css-js/js/alpine.js"></script>
 
     <!--SCC-JS for WhatsApp Floating Button-->
-    <link rel="stylesheet" href="/resources/css/floating-wpp.css">
-    <script type="text/javascript" src="/resources/js/floating-wpp.js"></script>
-    <script type="text/javascript" src="/resources/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/css-js/css/floating-wpp.css">
+    <script type="text/javascript" src="/css-js/js/floating-wpp.js"></script>
+    <script type="text/javascript" src="/css-js/js/jquery-3.3.1.min.js"></script>
+
 </head>
-<body>
-
-<div id="container">
-    <div id="header" class="min-h-[100vh] relative">
-
+<body class="antialiased font-sans scroll-smooth overflow-x-hidden w-[100vw] h-[100vh] m-0 p-0">
+<div id="container" class="min-h-[100vh] relative">
+    <div id="header">
+        @yield('header.container')
     </div>
-    <div id="main">
+    <div id="main" class="pb-[192px] lg:ml-48 lg:mr-96 mx-4">
         <main>
-            <h1>test</h1>
+            @yield('main.container')
         </main>
     </div>
-    <div id="footer">
-
+    <div id="footer" class="absolute bottom-0 w-[100vw] h-[60px]">
+        @yield('footer.container')
     </div>
 </div>
-<div id="myButton"></div>
+
 </body>
 
 <script type="text/javascript">
@@ -58,10 +58,9 @@
             headerTitle: 'Kritik dan Saran',
             headerColor: '#128C7E',
             backgroundColor: '#128C7E',
-            buttonImage: '<img src="/public/images/whatsapp.svg" />'
+            buttonImage: '<img src="/images/whatsapp.svg" alt="WhatsApp FAB"/>'
         });
     });
 </script>
-
 </html>
 
