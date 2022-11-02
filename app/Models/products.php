@@ -18,22 +18,22 @@ class products extends Model
         [
             'id' => 1,
             'title' => "Jumbo Desk Calendar",
-            'image' => "{image.svg}",
+            'image' => "jumboDeskCalendar.png",
         ],
         [
             'id' => 2,
             'title' => "Student Planner",
-            'image' => "{image.svg}",
+            'image' => "studentPlanner1.jpg",
         ],
         [
             'id' => 3,
             'title' => "Kalender Dinding",
-            'image' => "{image.svg}",
+            'image' => "kalenderDinding.jpg",
         ]
         ,[
             'id' => 4,
             'title' => "Undated Calendar",
-            'image' => "{image.svg}",
+            'image' => "undatedCalendar.jpg",
         ]
     ];
 

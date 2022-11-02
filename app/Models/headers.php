@@ -18,9 +18,9 @@ class headers extends Model
 
     private static $header = [
             'id' => 1,
-            'title' => "{Title}",
-            'subTitle' => "{Sub Title}",
-            'image' => "{image.svg}",
+            'title' => "Plaza Planner",
+            'subTitle' => "Planner for annual activity",
+            'image' => "header.jpg",
             'logo' => "{logo.svg}"
     ];
 
