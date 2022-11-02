@@ -10,20 +10,18 @@ class headers extends Model
     use HasFactory;
 
     protected $fillable = [
-        "title",
-        "subTitle",
-        "image",
-        "logo"
+        "title" => "{Title}",
+        "subTitle" => "{Sub Title}",
+        "image" => "{image.svg}",
+        "logo" => "{logo.svg}"
     ];
 
-    private static array $header = [
-        [
+    private static $header = [
             'id' => 1,
             'title' => "{Title}",
             'subTitle' => "{Sub Title}",
             'image' => "{image.svg}",
             'logo' => "{logo.svg}"
-        ]
     ];
 
     public static function index(){

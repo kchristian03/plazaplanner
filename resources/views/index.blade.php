@@ -41,17 +41,23 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="hidden md:block md:ml-10 md:space-x-10"><a href="#"
+                            <div class="hidden md:block md:ml-10 md:space-x-10"><a href="#Product-Catalog"
                                                                                    class="font-medium text-gray-500 hover:text-gray-900">Product
                                     Catalog</a>
-                                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Testimony</a> <a
-                                    href="#" class="font-medium text-gray-500 hover:text-gray-900">About Us</a> <a
-                                    href="#" class="hidden font-medium text-gray-500 hover:text-gray-900">Company</a>
+                                <a
+                                    href="#Video-Product" class="font-medium text-gray-500 hover:text-gray-900">Video
+                                    Product</a>
+                                <a href="#Testimonials" class="font-medium text-gray-500 hover:text-gray-900">Testimonials</a>
+                                <a
+                                    href="#About-Us" class="font-medium text-gray-500 hover:text-gray-900">About Us</a>
+
                             </div>
                         </div>
-                        <div class="hidden md:block text-right"><span
-                                class="inline-flex rounded-3xl shadow-md ring-1 ring-black ring-opacity-5"> <a href="#"
-                                                                                                               class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-3xl text-indigo-600 bg-white hover:bg-gray-50"> Buy Now !!! </a> </span>
+                        <div class="hidden md:block text-right">
+                            <span class="inline-flex rounded-3xl shadow-md ring-1 ring-black ring-opacity-5">
+                                <a href="https://wa.me/6281250205040/?text=Halo,%20saya%20mau%20beli%20"
+                                   class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-3xl text-black bg-[#FF8141] hover:bg-[#F08141]"> Buy Now !!! </a>
+                            </span>
                         </div>
                     </nav>
                     <div x-show="open" x-transition:enter="duration-150 ease-out"
@@ -79,20 +85,22 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="px-2 pt-2 pb-3 space-y-1"><a href="#"
+                            <div class="px-2 pt-2 pb-3 space-y-1"><a href="#Product-Catalog"
                                                                      class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product
                                     Catalog</a>
-                                <a href="#"
-                                   class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Testimony</a>
-                                <a href="#"
+                                <a href="#Video-Product"
+                                   class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Video
+                                    Product</a>
+                                <a href="#Testimonials"
+                                   class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Testimonials</a>
+                                <a href="#About-Us"
                                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About
                                     Us</a>
-                                <a href="#"
-                                   class="hidden block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
+
                             </div>
-                            <a href="#"
-                               class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
-                                Log in </a></div>
+                            <a href="https://wa.me/6281250205040/?text=Halo,%20saya%20mau%20beli%20"
+                               class="block w-full px-5 py-3 text-center font-medium text-[#FF8141] bg-gray-50 hover:bg-gray-100">
+                                Buy Now !!! </a></div>
                     </div>
                 </div>
                 <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
@@ -100,14 +108,12 @@
                         <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
                             <h1>
                                 <span class="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-                                    <span class="block text-gray-900">{{$header['title']}}</span>
-                                    <span class="block text-indigo-600">online business</span>
+                                   <span class="block text-gray-900">{{$headers['title']}}</span>
                                 </span>
                             </h1>
-                            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"> Anim aute
-                                id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit
-                                sunt amet fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt. </p>
-                            <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0"><p
+                            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"> {{$headers["subTitle"]}} </p>
+                            {{--START EMAIL SECTION--}}
+                            <div class="hidden mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0"><p
                                     class="text-base font-medium text-gray-900"> Sign up to get notified when it’s
                                     ready. </p>
                                 <form action="#" method="POST" class="mt-3 sm:flex"><label for="email" class="sr-only">Email</label>
@@ -121,6 +127,17 @@
                                 </form>
                                 <p class="mt-3 text-sm text-gray-500"> We care about the protection of your data. Read
                                     our <a href="#" class="font-medium text-gray-900 underline">Privacy Policy</a>. </p>
+                            </div>
+                            {{--END EMAIL SECTION--}}
+                            <div class="py-4">
+                                <span class="inline-flex rounded-3xl shadow-md ring-1 ring-black ring-opacity-5 mr-2">
+                                <a href="https://wa.me/6281250205040/?text=Halo,%20saya%20mau%20beli%20"
+                                   class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-3xl text-black bg-[#FF8141] hover:bg-[#F08141]"> Buy Now !!! </a>
+                            </span>
+                                <span class="inline-flex rounded-3xl shadow-md ring-1 ring-black ring-opacity-5 ml-2">
+                                <a href="#Product-Catalog"
+                                   class="inline-flex items-center px-4 py-2 border border-[#FF8141] text-base font-medium rounded-3xl text-black bg-white hover:bg-gray-50"> Read More </a>
+                            </span>
                             </div>
                         </div>
                         <div
@@ -140,6 +157,9 @@
                                       fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)"></rect>
                             </svg>
                             <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+                                <div class="relative block w-full bg-white rounded-lg overflow-hidden">
+                                    <img src="/images/{{$headers['image']}}">
+                                </div>
                                 <button type="button"
                                         class="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                     <span class="sr-only">Watch our video to learn more</span> <img class="w-full"
@@ -165,7 +185,7 @@
 
 @section('footer.container')
     <div class="" style="">
-        <footer class="bg-neutral-100" aria-labelledby="footer-heading"><h2 id="footer-heading" class="sr-only">
+        <footer class="bg-white" aria-labelledby="footer-heading"><h2 id="footer-heading" class="sr-only">
                 Footer</h2>
             <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
 
@@ -174,8 +194,8 @@
                     Sepenuhnya dibuat dan dianalisis berdasarkan data, fakta, dan berita yang ada
                     Opini, pandangan, dan artikel dibuat nyata dan dapat dipertanggungjawabkan </p>
                 <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
-                    <div class="flex space-x-6 md:order-2"><a href="#"
-                                                              class="text-gray-400 hover:text-gray-300"> <span
+                    <div class="hidden flex space-x-6 md:order-2"><a href="#"
+                                                                     class="text-gray-400 hover:text-gray-300"> <span
                                 class="sr-only">Facebook</span>
                             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd"
@@ -219,8 +239,186 @@
 
 
 @section('main.container')
-    <div id="header">
+    <div id="Product-Catalog" class="relative max-w-7xl mx-auto items-center justify-between px-4 sm:px-6">
+        <div class="text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+                Product Catalog
+            </h2>
+        </div>
+        <div class="" style="">
+            <div class="bg-white">
+                <div class=" mx-auto py-0 px-4 sm:py-24 sm:px-6 lg:px-8">
+                    <div class="mt-0 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3">
+                        <!--START LOOP-->
+                        @php($i = 0)
+                        @foreach($products as $product)
+                            <div class="relative group">
+                                <div class="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden bg-gray-100"><img
+                                        src="/images/{{$product['image']}}"
+                                        alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+                                        class="object-center object-cover">
+                                    <div class="flex items-end opacity-0 p-4 group-hover:opacity-100"
+                                         aria-hidden="true">
+                                        <div
+                                            class="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
+                                            View Product
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+                                    <h3><a href="#"> <span aria-hidden="true"
+                                                           class="absolute inset-0"></span> {{$product['title']}}
+                                        </a>
+                                    </h3>
+                                    <p class="hidden">$49</p></div>
+                                <p class="hidden mt-1 text-sm text-gray-500"> UI Kit </p>
+                            </div>
+                            @php($i++)
+                        @endforeach
+                        <!--END LOOP-->
 
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div id="Video-Product" class="relative max-w-7xl mx-auto items-center justify-between px-4 sm:px-6">
+        <div class="text-center">
+            <h2 class="text-3xl mb-12 md:text-4xl font-extrabold mb-4">
+                Video Product
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <iframe class="aspect-w-3 aspect-h-2" width="100vw" src="https://www.youtube.com/embed/MsVS4MJD0bQ"
+                        title="Student Planner by Plaza Planner" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/-yJrjddfAZM"
+                        title="Undated Desk Calendar - Kalendar sepanjang tahun" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="Testimonials" class="relative max-w-7xl mx-auto items-center justify-between px-4 sm:px-6">
+        <!-- Testimonials Section: Boxed Multiple -->
+        <div class="bg-white">
+            <div class="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+                <!-- Heading -->
+                <div class="text-center">
+                    <div class="text-sm uppercase font-bold tracking-wider mb-1 text-orange-700">
+                        Real Feedback
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+                        Customer Testimonials
+                    </h2>
+                </div>
+                <!-- END Heading -->
 
+                <!-- Feedback -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    {{--START LOOP--}}
+                    @php($i = 0)
+                    @foreach($testimonies as $testimoni)
+                        <div class="border rounded-md bg-gray-50 shadow-sm relative">
+                            <div
+                                class="absolute top-0 right-0 text-9xl mt-3 mr-5 text-orange-200 opacity-75 font-serif">
+                                “
+                            </div>
+                            <div class="px-6 pt-16 pb-6 md:px-12 md:pb-10 relative text-center">
+                                <div class="mb-3">
+
+
+                                    <div class="inline-flex items-center bg-orange-100 px-2 py-1 rounded-lg">
+                                        @for($i = 1; $i <= $testimoni['rating']; $i++)
+                                            <svg fill="currentColor" viewBox="0 0 20 20"
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 class="text-yellow-500 hi-solid hi-star inline-block w-5 h-5">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                            </svg>
+                                        @endfor
+                                        @if($testimoni['rating'] < 5)
+                                            @for($k = 1; $k <= (5 - $testimoni['rating']); $k++)
+                                                <svg fill="currentColor" viewBox="0 0 20 20"
+                                                     xmlns="http://www.w3.org/2000/svg"
+                                                     class="text-gray-500 hi-solid hi-star inline-block w-5 h-5">
+                                                    <path
+                                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                                </svg>
+                                            @endfor
+                                        @endif
+                                    </div>
+
+                                </div>
+                                <blockquote class="lg:w-4/5 xl:w-4/5 mx-auto">
+                                    <p class="font-semibold text-xl leading-8 mb-5">
+                                        {{$testimoni['comment']}}
+                                    </p>
+                                    <footer class="space-y-4">
+                                        <a href="javascript:void(0)"
+                                           class="block mx-auto rounded-full overflow-hidden w-20 h-20 transform transition ease-out duration-150 border-2 border-gray-50 hover:border-white hover:shadow-md hover:scale-125 active:border-gray-50 active:shadow-sm active:scale-110">
+                                            <img src="/images/{{$testimoni['img_people']}}"
+                                                 alt="Avatar Photo">
+                                        </a>
+                                        <div>
+                                            <a href="javascript:void(0)"
+                                               class="text-lg font-semibold text-orange-600 hover:text-orange-400">
+                                                {{$testimoni['name']}}
+                                            </a>
+                                            <div class="mx-auto w-10 h-1 my-1 rounded-lg bg-orange-200"></div>
+                                            <p class="text-gray-500 font-medium">
+                                                {{$testimoni['timestamp']}}
+                                            </p>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        @php($i++)
+                    @endforeach
+                    {{--END LOOP--}}
+                </div>
+                <!-- END Feedback -->
+            </div>
+        </div>
+        <!-- END Testimonials Section: Boxed Multiple -->
+    </div>
+    <div id="Information" class="relative max-w-7xl mx-auto items-center justify-between px-4 sm:px-6">
+        <div class="">
+            <h2 class="text-center text-3xl md:text-4xl font-extrabold mb-4">
+                Shipping Information
+            </h2>
+            <ul class="text-2xl list-disc mb-4 ml-24 list-outside">
+                <li>Dikirm di hari yang sama</li>
+                <li>Terima H-1 Order</li>
+                <li>Packing Aman</li>
+            </ul>
+
+
+        </div>
+    </div>
+    <div id="Warranty" class="relative max-w-7xl mx-auto items-center justify-between px-4 sm:px-6">
+        <div class="">
+            <h2 class="text-center text-3xl md:text-4xl font-extrabold mb-4">
+                Customer Warranty
+            </h2>
+            <ul class="text-2xl list-disc mb-4 ml-24 list-outside">
+                <li>Jaminan Hasil print jelas</li>
+                <li>Produk anti air</li>
+                <li>Kertas tidak menguning</li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="About-Us" class="relative max-w-7xl mx-auto items-center justify-between px-4 sm:px-6">
+        <div class="">
+            <h2 class="text-center text-3xl md:text-4xl font-extrabold mb-4">
+                About Us
+            </h2>
+            <p class="font-semibold text-2xl leading-8 mb-5">lorem ipsum</p>
+
+        </div>
+    </div>
 @endsection

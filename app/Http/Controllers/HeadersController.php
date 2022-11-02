@@ -10,8 +10,6 @@ class HeadersController extends Controller
     public function index()
     {
         return view('index', [
-            'pageTitle' => 'Plaza Planner',
-            'maintitle' => 'Writers in my library',
             'headers' => headers::index()
         ]);
     }

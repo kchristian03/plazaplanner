@@ -32,10 +32,10 @@
 </head>
 <body class="antialiased font-sans scroll-smooth overflow-x-hidden w-[100vw] h-[100vh] m-0 p-0">
 <div id="container" class="min-h-[100vh] relative">
-    <div id="header">
+    <div id="header" class="w-[100vw]">
         @yield('header.container')
     </div>
-    <div id="main" class="pb-[192px] lg:ml-48 lg:mr-96 mx-4">
+    <div id="main" class="pb-[192px]">
         <main>
             @yield('main.container')
         </main>
