@@ -24,8 +24,8 @@
                         <div class="flex items-center flex-1">
                             <div class="flex items-center justify-between w-full md:w-auto"><a href="#"> <span
                                         class="sr-only">PlazaPlanner</span> <img class="h-8 w-auto sm:h-10"
-                                                                             src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                                                                             alt=""> </a>
+                                                                                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                                                                 alt=""> </a>
                                 <div class="-mr-2 flex items-center md:hidden">
                                     <button type="button"
                                             class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -42,14 +42,16 @@
                                 </div>
                             </div>
                             <div class="hidden md:block md:ml-10 md:space-x-10"><a href="#"
-                                                                                   class="font-medium text-gray-500 hover:text-gray-900">Product Catalog</a>
+                                                                                   class="font-medium text-gray-500 hover:text-gray-900">Product
+                                    Catalog</a>
                                 <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Testimony</a> <a
                                     href="#" class="font-medium text-gray-500 hover:text-gray-900">About Us</a> <a
-                                    href="#" class="hidden font-medium text-gray-500 hover:text-gray-900">Company</a></div>
+                                    href="#" class="hidden font-medium text-gray-500 hover:text-gray-900">Company</a>
+                            </div>
                         </div>
                         <div class="hidden md:block text-right"><span
                                 class="inline-flex rounded-3xl shadow-md ring-1 ring-black ring-opacity-5"> <a href="#"
-                                                                                                              class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-3xl text-indigo-600 bg-white hover:bg-gray-50"> Buy Now !!! </a> </span>
+                                                                                                               class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-3xl text-indigo-600 bg-white hover:bg-gray-50"> Buy Now !!! </a> </span>
                         </div>
                     </nav>
                     <div x-show="open" x-transition:enter="duration-150 ease-out"
@@ -78,11 +80,13 @@
                                 </div>
                             </div>
                             <div class="px-2 pt-2 pb-3 space-y-1"><a href="#"
-                                                                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product Catalog</a>
+                                                                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product
+                                    Catalog</a>
                                 <a href="#"
                                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Testimony</a>
                                 <a href="#"
-                                   class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About Us</a>
+                                   class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About
+                                    Us</a>
                                 <a href="#"
                                    class="hidden block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
                             </div>
@@ -93,11 +97,13 @@
                 </div>
                 <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
                     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-                        <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left"><h1><span
-                                    class="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">Coming soon</span>
-                                <span class="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl"> <span
-                                        class="block text-gray-900">Data to enrich your</span> <span
-                                        class="block text-indigo-600">online business</span> </span></h1>
+                        <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                            <h1>
+                                <span class="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
+                                    <span class="block text-gray-900">{{$header['title']}}</span>
+                                    <span class="block text-indigo-600">online business</span>
+                                </span>
+                            </h1>
                             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"> Anim aute
                                 id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit
                                 sunt amet fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt. </p>
